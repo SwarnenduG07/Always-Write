@@ -1,0 +1,8 @@
+name = "backend"
+compatibility_date = "2023-12-01"
+
+ [vars]
+# MY_VAR = "my-variable"
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiYTRjYjU1NDUtNWY3ZC00YjQyLWE1YWQtMGE1MzhjZTI0Y2FlIiwidGVuYW50X2lkIjoiZTg5ODVhNWMxODYyNDc5YTkzYjZlNjM3YzgzYTFkZjg2NzRkMGUxZWZkZjNiZjNkNTViOTA1MTZkNTRlNTEzYyIsImludGVybmFsX3NlY3JldCI6ImRmMzA2Mzk1LWUyNTAtNDdiZi04YzQ5LTljOTU0MzBkZjBkMCJ9.I6Qr3yahwmsgGJKyoRPaDfbK7gPXIBT4VdO13ka7Se4"
+ 
+JWT_SECRET = "I am a noob and learning to code"
