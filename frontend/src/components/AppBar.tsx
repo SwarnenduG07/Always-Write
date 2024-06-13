@@ -6,7 +6,7 @@ import { Avater } from "./BlogCard"
             Medium
         </div>
         <div>
-                <Avater size={10} name="swarnendu" />
+                <Avater size={"big"} name="swarnendu" />
         </div>
 
     </div>
