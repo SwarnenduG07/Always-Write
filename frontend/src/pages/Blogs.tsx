@@ -18,8 +18,9 @@ export const Blogs = () => {
             </div>
             <div className="flex justify-center">
                <div className="max-w-xl">
-                  {blogs. map(blog => <BlogCard
-                        authorName = {blog.author.name || "Thala"}
+                  {blogs. map(blog => <BlogCard            
+                         id = {blog.id}
+                        authorName = {blog.author.name || "Stive Jobs"}
                         title = {blog.title}
                         content = {blog.content}
                         publishedDate = {"5/26/2024"}

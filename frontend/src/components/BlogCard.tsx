@@ -1,17 +1,22 @@
+import { Link } from "react-router-dom";
 
  interface BlogCardProps {
     authorName: string;
     title: string;
     content: string;
     publishedDate: string;
+    id: number | string;
  }
  export const BlogCard = ({
+    id,
     authorName,
     title,
     content,
     publishedDate
  }: BlogCardProps) => {
-    return <div className="bg-gray-100 pt-3 p-4 border-b border-slate-200 pb-3.5">
+    return <Link to={`/blog/${id}`}>
+    <div className="bg-gray-100 pt-3 p-4 border-b border-slate-200 pb-3.5
+    w-screen-md cursor-pointer">
             <div className="flex">
                 <Avater name={authorName} size={"small"} />
                   
@@ -40,7 +45,8 @@
                  
             </div>
 
-    </div> 
+      </div> 
+    </Link> 
  }
 
    export function Avater({name, size = "small"}: {name: string, size: "small" | "big"}) {
