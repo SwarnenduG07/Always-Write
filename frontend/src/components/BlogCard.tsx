@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
     return <Link to={`/blog/${id}`}>
     <div className="bg-gray-100 pt-3 p-4 border-b border-slate-200 pb-3.5
     w-screen-md cursor-pointer">
-            <div className="flex">
+               <div className="flex">
                 <Avater name={authorName} size={"small"} />
                   
           

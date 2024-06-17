@@ -3,7 +3,7 @@ import { Blog } from "../hooks"
 import { Appbar } from "./AppBar"
 import { Avater } from "./BlogCard"
 
-export const  FullBlog = ({blog}: {blog: Blog |any}) => {
+export const  FullBlog = ({blog}: {blog: Blog | any}) => {
     return <div>
         <Appbar/> 
             <div className="flex justify-center">
@@ -13,7 +13,7 @@ export const  FullBlog = ({blog}: {blog: Blog |any}) => {
                             {blog.title}
                     </div>
                     <div className="text-slate-500 pt-2">
-                        Poste on 12/12/2023
+                        Posted on 6.12.2023
                     </div>
                     <div className="">
                         {blog.content}
@@ -33,8 +33,8 @@ export const  FullBlog = ({blog}: {blog: Blog |any}) => {
                             {blog.author.name || "Steve Jobs"}
                             <div className="pt-2 text-slate-500">
                                 Random catch phrese about the authers writing skills
-                          </div>  
-                            </div>
+                           </div>  
+                     </div>
                                                    
                  </div>                 
              </div>        

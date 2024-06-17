@@ -13,7 +13,7 @@ export const Blogs = () => {
     }
 
     return <div>
-             <div>
+             <div className="">
                 <Appbar/>
             </div>
             <div className="flex justify-center">
