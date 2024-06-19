@@ -5,7 +5,7 @@ const Landing = () => {
     
     <div className="w-screen h-[100vh] md:h-[40vh] bg-gradient-to-r from-emerald-500 to-emerald-800 flex flex-col justify-center items-center text-white">
       <h1 className="text-4xl md:text-5xl tracking-wide font-extrabold text-center md:text-left drop-shadow-lg">
-        Stay Curious.
+        Always Write
       </h1>
       <h6 className="px-8 text-xl md:text-2xl tracking-wide font-light text-center md:text-left py-6 drop-shadow-lg">
         A place to read, write, and deepen your understanding.
