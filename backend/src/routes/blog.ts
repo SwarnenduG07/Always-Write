@@ -17,8 +17,8 @@ export const blogRouter = new Hono<{
 
 blogRouter.use("/*", async (c,next)=> {
     
-    const header = c.req.header("authorization") || "";
-    const token = header.split(" ")[1] // for Bearer
+    const authHeader = c.req.header("authorization") || "";
+    const token = authHeader.split(" ")[1] // for Bearer
 
         try {
             const response = await verify(token, c.env.JWT_SECRET) 
@@ -97,22 +97,30 @@ blogRouter.put("/", async (c)=> {
     const prisma =  new PrismaClient({
         datasourceUrl: c.env.DATABASE_URL,
     }).$extends(withAccelerate());
-    const blog = await prisma.blog.findMany({
-        select: {
-            content: true,
-            title: true,
-            id: true,
-            author: {
-                select: {
-                    name: true
+    try {
+        const blog = await prisma.blog.findMany({
+            select: {
+                content: true,
+                title: true,
+                id: true,
+                author: {
+                    select: {
+                        name: true
+                    }
                 }
             }
-        }
-    });
-        
-    return c.json({
-        blog
-    })
+        });
+            
+        return c.json({
+            blog
+        })
+    } catch (e) {
+        console.log(e);
+         return c.json({
+            message: "error while frtching bulk"
+         })
+    }
+    
     
 })
   
