@@ -11,13 +11,13 @@ const Landing = () => {
         A place to read, write, and deepen your understanding.
       </h6>
       <Link
-        to="/blogs"
+        to="/signup"
         className="rounded-md px-3.5 py-2 my-1 overflow-hidden relative group cursor-pointer border-2 border-gray-900 font-medium bg-gray-900 text-gray-100"
       >
-        <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 border-gray-900 group-hover:text-gray-900 group-hover:border group-hover:border-gray-900 group-hover:bg-gray-200 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-        <span className="relative text-gray-100 transition font-bold duration-300 group-hover:text-gray-900 group-hover:bg-gray-200 ease text-md md:text-lg tracking-wider">
+        <div className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 border-gray-900 group-hover:text-gray-900 group-hover:border group-hover:border-gray-900 group-hover:bg-gray-200 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></div>
+        <div className="relative text-gray-100 transition font-bold duration-300 group-hover:text-gray-900 group-hover:bg-gray-200 ease text-md md:text-lg tracking-wider">
           Start reading
-        </span>
+        </div>
       </Link>
       <div className="container-chevron pt-16 md:hidden">
           <div className="chevron"></div>
